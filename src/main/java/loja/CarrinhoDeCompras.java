@@ -29,7 +29,14 @@ public class CarrinhoDeCompras {
         if(itens.isEmpty() ){
             return 0;
         }
-        return itens.get(0).getValorTotal();
+        double maior = itens.get(0).getValorTotal();
+        for(Item item : itens){
+            if(maior < item.getValorTotal()){
+               maior = item.getValorUnitario();
+            }
+        }
+        
+        return maior;
     }
 
 }
