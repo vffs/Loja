@@ -24,5 +24,9 @@ public class CarrinhoDeCompras {
     public List<Item> getItens() {
         return Collections.unmodifiableList(itens);
     }
+    
+    public double maiorValor() {
+        return 0;
+    }
 
 }
