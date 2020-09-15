@@ -26,7 +26,10 @@ public class CarrinhoDeCompras {
     }
     
     public double maiorValor() {
-        return 0;
+        if(itens.isEmpty() ){
+            return 0;
+        }
+        return itens.get(0).getValorTotal();
     }
 
 }
